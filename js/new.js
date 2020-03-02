@@ -22,6 +22,23 @@ $(document).ready(function(){
 	$('.tabs-nav-new1').children('li').filter(':first').addClass('active');
 	$('.tabs-box-new1').children('div').filter(':first').addClass('active');
 
+	$('.tabs-nav-new li').click(function(e) {
+		var a = $(this),
+				parent = a.parents('.tabs-new'),
+				nav = parent.children('.tabs-nav-new').children('li'),
+				box = parent.children('.tabs-box-new').children('div');
+
+		if (!a.hasClass('active')) {
+			a.addClass('active')
+				.siblings().removeClass('active');
+
+			box.eq(a.index()).addClass('active')
+				.siblings().removeClass('active');
+		}
+
+		e.preventDefault();
+	});
+	
 	/* 28.02.20 */
 
 	$('.tabs-nav-new li').click(function(e) {
