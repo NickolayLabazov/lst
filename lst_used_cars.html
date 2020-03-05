@@ -47,7 +47,7 @@
       <![endif]-->
 </head>
 
-<body>
+<body class='body-container'>
    <div class="popup">
       <div class="popup-shadow"></div>
       <div class="popup-content" style="position: fixed; margin: auto 0px auto -420px; top: 20%; left: 50%;"></div>
@@ -290,9 +290,9 @@
          </div>
          <div id="userlogin" class="module-grey">
             <a id="enter" class="a-logo" href="http://client.lst-group.ru/enter">
-               <img src="./img/new/input.jpg" alt="" class='input-logo'>Вход</a>
+               <img src="./img/new/input.jpg" class='input-logo'>Вход</a>
             <a id="registration" class="a-logo" href="http://client.lst-group.ru/register">
-               <img src="./img/new/registration.jpg" alt="" class='reg-logo'>Регистрация</a>
+               <img src="./img/new/registration.jpg" class='reg-logo'>Регистрация</a>
          </div>
       </header>
       <!-- #header-->
@@ -335,138 +335,155 @@
                            <div class='cars-form'>
 
 
-                              <div class="tabs-new">
+                              <div class="tabs-new tabs-box-new4">
                                  <ul class="tabs-nav-new">
                                     <li role="button">С пробегом</li>
                                     <li role="button">Новые</li>
                                  </ul>
-                                 <div class="tabs-box-new">
-                                    <div>
+                                 <div class="tabs-box-new tabs-box-new3">
+                                    <div class='around-description'>
                                        <div class='description-auto'>
                                           <div class='description-auto-small' style='position: relative'>
                                              <form class='input-all'>
-                                                <div class='input-container'>
 
-                                                   <div class='input-box'>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="BMW">BMW</option>
-                                                            <option value="BMW1">BMW1</option>
-                                                            <option value="BMW2">BMW2</option>
-                                                         </select>
-                                                         <div class='input-down'>
 
+                                                <div class='input-string'>
+                                                   <div class='input-box-big'>
+
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="brand" class='input-box-input'>
+                                                               <option value="BMW">BMW</option>
+                                                               <option value="BMW1">BMW1</option>
+                                                               <option value="BMW2">BMW2</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+
+                                                   </div>
+                                                   <div class='input-box-big '>
+
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="model" class='input-box-input'>
+                                                               <option value="Все модели">Все модели</option>
+                                                               <option value="BMW1">BMW1</option>
+                                                               <option value="BMW2">BMW2</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select  disabled">
+                                                            <select name="generation" class='input-box-input'
+                                                               style='color: #e5f3f9'>
+                                                               <option value="Все поколения">Все поколения</option>
+                                                               <option value="Поколение 1">Поколение 1</option>
+                                                               <option value="Поколение 2">Поколение 2</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+                                                <div class='input-string'>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-box-small'>
+                                                         <input value='Цена от,руб' data-v='Цена от,руб'
+                                                            name="price-min" class='input-box-input' />
+                                                      </div>
+                                                      <div class='input-box-small'>
+                                                         <input value='до' data-v='до' name="price-max"
+                                                            class='input-box-input' />
+                                                      </div>
+                                                   </div>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-box-small'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="year-min" class='input-box-input'>
+                                                                  <option value="Год от">Год от</option>
+                                                                  <option value="2019">2019</option>
+                                                                  <option value="2018">2018</option>
+                                                               </select>
+                                                            </div>
                                                          </div>
                                                       </div>
                                                       <div class='input-box-small'>
-                                                         <input value='Цена от,руб' name="" id=""
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="year-max" class='input-box-input'>
+                                                                  <option value="До">До</option>
+                                                                  <option value="2019">2019</option>
+                                                                  <option value="2018">2018</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-box-small'>
+                                                         <input value='Пробег от' data-v='Пробег от' name=run-min"
                                                             class='input-box-input' />
                                                       </div>
                                                       <div class='input-box-small'>
-                                                         <input value='до' name="" id="" class='input-box-input' />
-                                                      </div>
-
-                                                      <div class='input-box-small'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="КПП">КПП</option>
-                                                            <option value="Ручная">Ручная</option>
-                                                            <option value="Автомат">Автомат</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-                                                      <div class='input-box-small'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Привод">Привод</option>
-                                                            <option value="Задний">Задний</option>
-                                                            <option value="Передний">Передний</option>
-                                                            <option value="Полный">Полный</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-                                                   </div>
-
-                                                   <div class='input-box'>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Все модели">Все модели</option>
-                                                            <option value="BMW1">BMW1</option>
-                                                            <option value="BMW2">BMW2</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-
-                                                      <div class='input-box-small'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Год от">Год от</option>
-                                                            <option value="2019">2019</option>
-                                                            <option value="2018">2018</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-                                                      <div class='input-box-small'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="До">До</option>
-                                                            <option value="2019">2019</option>
-                                                            <option value="2018">2018</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Тип кузова">Тип кузова</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-                                                   </div>
-
-                                                   <div class='input-box'>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input disabled' style='color: #e5f3f9'>
-                                                            <option value="Все поколения">Все поколения</option>
-                                                            <option value="Поколение 1">Поколение 1</option>
-                                                            <option value="Поколение 2">Поколение 2</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-
-                                                      <div class='input-box-small'>
-                                                         <input value='Пробег от' name="" id=""
+                                                         <input value='до' data-v='до' name="run-max"
                                                             class='input-box-input' />
                                                       </div>
-                                                      <div class='input-box-small'>
-                                                         <input value='до' name="" id="" class='input-box-input' />
+                                                   </div>
+                                                </div>
 
+                                                <div class='input-string'>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-box-small'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="kpp" class='input-box-input'>
+                                                                  <option value="КПП">КПП</option>
+                                                                  <option value="Ручная">Ручная</option>
+                                                                  <option value="Автомат">Автомат</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class='input-box-small'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="drive" class='input-box-input'>
+                                                                  <option value="Привод">Привод</option>
+                                                                  <option value="Задний">Задний</option>
+                                                                  <option value="Передний">Передний</option>
+                                                                  <option value="Полный">Полный</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
                                                       </div>
 
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Тип кузова">Тип двигателя</option>
-                                                         </select>
-                                                         <div class='input-down'>
+                                                   </div>
 
+                                                   <div class='input-box-big '>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="body" class='input-box-input'>
+                                                               <option value="Тип кузова">Тип кузова</option>
+                                                            </select>
                                                          </div>
                                                       </div>
                                                    </div>
 
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="motor" class='input-box-input'>
+                                                               <option value="Тип кузова">Тип двигателя</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
                                                 </div>
 
                                                 <div class='check-container'>
-
                                                    <div class='check-box'>
                                                       <input class='check1' type="checkbox" value='true' id='vin'
                                                          checked>
@@ -479,349 +496,352 @@
                                                 </div>
 
                                                 <div class='color-container'>
-                                                   <div class='black'>
+                                                   <div class='black color-quadr-right'>
                                                       <input class='color-black' type="checkbox" value='true'
                                                          id='color1'>
                                                       <label class='color-black' for="color1"></label>
                                                    </div>
 
-                                                   <div class='colorbox-2'>
+                                                   <div class='color-quadr-2 color-quadr-right'>
                                                       <input class='color-2' type="checkbox" value='true' id='color-2'>
                                                       <label class='color-2' for="color-2"></label>
                                                    </div>
 
-                                                   <div class='colorbox-3'>
+                                                   <div class='color-quadr-3 color-quadr-right'>
                                                       <input class='color-3' type="checkbox" value='true' id='color-3'>
                                                       <label class='color-3' for="color-3"></label>
                                                    </div>
-                                                   <div class='colorbox-4'>
+                                                   <div class='color-quadr-4 color-quadr-right'>
                                                       <input class='color-4' type="checkbox" value='true' id='color-4'>
                                                       <label class='color-4' for="color-4"></label>
                                                    </div>
 
-                                                   <div class='colorbox-5'>
+                                                   <div class='color-quadr-5 color-quadr-right'>
                                                       <input class='color-5' type="checkbox" value='true' id='color-5'>
                                                       <label class='color-5' for="color-5"></label>
                                                    </div>
 
-                                                   <div class='colorbox-6'>
+                                                   <div class='color-quadr-6 color-quadr-right'>
                                                       <input class='color-6' type="checkbox" value='true' id='color-6'>
                                                       <label class='color-6' for="color-6"></label>
                                                    </div>
 
-                                                   <div class='colorbox-7'>
+                                                   <div class='color-quadr-7 color-quadr-right'>
                                                       <input class='color-7' type="checkbox" value='true' id='color-7'>
                                                       <label class='color-7' for="color-7"></label>
                                                    </div>
 
-                                                   <div class='colorbox-8'>
+                                                   <div class='color-quadr-8 color-quadr-right'>
                                                       <input class='color-8' type="checkbox" value='true' id='color-8'>
                                                       <label class='color-8' for="color-8"></label>
                                                    </div>
 
-                                                   <div class='colorbox-9'>
+                                                   <div class='color-quadr-9 color-quadr-right'>
                                                       <input class='color-9' type="checkbox" value='true' id='color-9'>
                                                       <label class='color-9' for="color-9"></label>
                                                    </div>
 
-                                                   <div class='colorbox-10'>
+                                                   <div class='color-quadr-10 color-quadr-right'>
                                                       <input class='color-10' type="checkbox" value='true'
                                                          id='color-10'>
                                                       <label class='color-10' for="color-10"></label>
                                                    </div>
 
-                                                   <div class='colorbox-11'>
+                                                   <div class='color-quadr-11 color-quadr-right'>
                                                       <input class='color-11' type="checkbox" value='true'
                                                          id='color-11'>
                                                       <label class='color-11' for="color-11"></label>
                                                    </div>
 
-                                                   <div class='colorbox-12'>
+                                                   <div class='color-quadr-12 color-quadr-right'>
                                                       <input class='color-12' type="checkbox" value='true'
                                                          id='color-12'>
                                                       <label class='color-12' for="color-12"></label>
                                                    </div>
 
-                                                   <div class='colorbox-13'>
+                                                   <div class='color-quadr-13 color-quadr-right'>
                                                       <input class='color-13' type="checkbox" value='true'
                                                          id='color-13'>
                                                       <label class='color-13' for="color-13"></label>
                                                    </div>
 
-                                                   <div class='colorbox-14'>
+                                                   <div class='color-quadr-14 color-quadr-right'>
                                                       <input class='color-14' type="checkbox" value='true'
                                                          id='color-14'>
                                                       <label class='color-14' for="color-14"></label>
                                                    </div>
 
-                                                   <div class='colorbox-15'>
+                                                   <div class='color-quadr-15 color-quadr-right'>
                                                       <input class='color-15' type="checkbox" value='true'
                                                          id='color-15'>
                                                       <label class='color-15' for="color-15"></label>
                                                    </div>
 
-                                                   <div class='colorbox-16'>
+                                                   <div class='color-quadr-16 color-quadr-right'>
                                                       <input class='color-16' type="checkbox" value='true'
                                                          id='color-16'>
                                                       <label class='color-16' for="color-16"></label>
                                                    </div>
 
-
-
-
-
-
-
-
-
-
-
+                                                   <div class='all-color'>
+                                                      <div class='check-box'>
+                                                         <input class='check1' type="checkbox" value='true'
+                                                            id='all-color'>
+                                                         <label for="all-color">Любой цвет</label>
+                                                      </div>
+                                                   </div>
 
                                                 </div>
 
-                                                <div class='input-container'>
-
-                                                   <div class='input-box'>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Состояние">Состояние</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Руль">Руль</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
+                                                <div class='input-string'>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="" class='input-box-input'>
+                                                               <option value="Состояние">Состояние</option>
+                                                            </select>
                                                          </div>
                                                       </div>
                                                    </div>
-
-                                                   <div class='input-box'>
-
-
+                                                   <div class='input-box-big'>
                                                       <div class='input-box-small'>
-                                                         <input value='Мощность от' name="" id=""
-                                                            class='input-box-input' />
+                                                         <input value='Мощность от' data-v='Мощность от'
+                                                            name="power-min" class='input-box-input' />
                                                       </div>
                                                       <div class='input-box-small'>
-                                                         <input value='Доб л.с.' name="" id=""
+                                                         <input value='До, л.с.' data-v='До, л.с.' name="power-max"
                                                             class='input-box-input' />
-                                                      </div>
-
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Владелец по ПТС">Владелец по ПТС</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
                                                       </div>
                                                    </div>
-
-                                                   <div class='input-box'>
+                                                   <div class='input-box-big'>
                                                       <div class='input-box-small'>
-                                                         <input value='Объём от' name="" id=""
+                                                         <input value='Объём от' data-v='Объём от' name="v-min"
                                                             class='input-box-input' />
                                                       </div>
                                                       <div class='input-box-small'>
-                                                         <input value='До, л' name="" id="" class='input-box-input' />
+                                                         <input value='До, л' data-v='До, л' name="v-max"
+                                                            class='input-box-input' />
                                                       </div>
-
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Количество дверей">Количество дверей</option>
-                                                            <option value="2">2</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
-                                                         </div>
-                                                      </div>
-
                                                    </div>
                                                 </div>
 
-                                                <div class='input-container'>
-                                                   <div class='input-box-1'>
+                                                <div class='input-string'>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="rudder" class='input-box-input'>
+                                                               <option value="Руль">Руль</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="ptc" class='input-box-input'>
+                                                               <option value="Владелец по ПТС">Владелец по ПТС</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class='input-box-big'>
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="door" class='input-box-input'>
+                                                               <option value="Количество дверей">Количество дверей
+                                                               </option>
+                                                               <option value="2">2</option>
+                                                               <option value="4">4</option>
+                                                               <option value="5">5</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+                                                <div class='input-string input-string3'>
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Климат</div>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Состояние">Состояние</option>
-                                                         </select>
-                                                         <div class='input-down'>
+                                                      <div class='input-box-content'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="state" class='input-box-input'>
+                                                                  <option value="Состояние">Состояние</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
 
+                                                         <div class='checks'>
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check1'>
+                                                               <label for="check1">Обогрев сидений</label>
+                                                            </div>
+
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check2'>
+                                                               <label for="check2">Обогрев зеркал</label>
+                                                            </div>
+
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check3'>
+                                                               <label for="check3">Обогрев руля</label>
+                                                            </div>
                                                          </div>
                                                       </div>
-                                                      <div
-                                                         style='height: 95px; display: flex; flex-direction: column; justify-content: space-around;'>
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check1'>
-                                                            <label for="check1">Обогрев сидений</label>
-                                                         </div>
-
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check2'>
-                                                            <label for="check2">Обогрев зеркал</label>
-                                                         </div>
-
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check3'>
-                                                            <label for="check3">Обогрев руля</label>
-                                                         </div>
-                                                      </div>
-
                                                    </div>
 
-                                                   <div class='input-box-1'>
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Салон</div>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Обивка салона">Обивка салона</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
+                                                      <div class='input-box-content'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="salon" class='input-box-input'>
+                                                                  <option value="Обивка салона">Обивка салона</option>
+                                                               </select>
+                                                            </div>
                                                          </div>
-                                                      </div>
 
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Регулировка руля">Регулировка руля</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="rudder-adj" class='input-box-input'>
+                                                                  <option value="Регулировка руля">Регулировка руля
+                                                                  </option>
+                                                               </select>
+                                                            </div>
                                                          </div>
-                                                      </div>
 
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Количество мест">Количество мест</option>
-                                                         </select>
-                                                         <div class='input-down'>
 
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="number-pack" class='input-box-input'>
+                                                                  <option value="Количество мест">Количество мест
+                                                                  </option>
+                                                               </select>
+                                                            </div>
                                                          </div>
                                                       </div>
                                                    </div>
 
-                                                   <div class='input-box-1'>
+
+
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Безопасность</div>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Подушка безопасности">Подушка безопасности
-                                                            </option>
-                                                         </select>
-                                                         <div class='input-down'>
-
+                                                      <div class='input-box-content'>
+                                                         <div class='input-all-select-abs'>
+                                                            <div class="input-all-select">
+                                                               <select name="pillow" class='input-box-input'>
+                                                                  <option value="Подушка безопасности">Подушка
+                                                                     безопасности
+                                                                  </option>
+                                                               </select>
+                                                            </div>
                                                          </div>
-                                                      </div>
-                                                      <div
-                                                         style='height: 95px; display: flex; flex-direction: column; justify-content: space-around;'>
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check4'>
-                                                            <label for="check4">Охранные системы</label>
-                                                         </div>
+                                                         <div class='checks'>
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check4'>
+                                                               <label for="check4">Охранные системы</label>
+                                                            </div>
 
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check5'>
-                                                            <label for="check5">Антиблокировочная система (ABS)</label>
-                                                         </div>
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check5'>
+                                                               <label for="check5">Антиблокировочная система
+                                                                  (ABS)</label>
+                                                            </div>
 
-                                                         <div class='check-box'>
-                                                            <input type="checkbox" value='true' id='check6'>
-                                                            <label for="check6">Антипробуксовочная система (ASR)</label>
+                                                            <div class='check-box'>
+                                                               <input type="checkbox" value='true' id='check6'>
+                                                               <label for="check6">Антипробуксовочная система
+                                                                  (ASR)</label>
+                                                            </div>
                                                          </div>
                                                       </div>
                                                    </div>
                                                 </div>
 
-                                                <div class='input-container'>
-                                                   <div class='input-box-1'
-                                                      style='height: 120px; display: flex; flex-direction: column; justify-content: space-around;'>
+                                                <div class='input-string input-string2'>
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Мультимедиа</div>
+                                                      <div class='checks'>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check7'>
+                                                            <label for="check7">Аудио система</label>
+                                                         </div>
 
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check8'>
+                                                            <label for="check8">Бортовой компьютер</label>
+                                                         </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check7'>
-                                                         <label for="check7">Аудио система</label>
-                                                      </div>
-
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check8'>
-                                                         <label for="check8">Бортовой компьютер</label>
-                                                      </div>
-
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check9'>
-                                                         <label for="check9">Навигатор</label>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check9'>
+                                                            <label for="check9">Навигатор</label>
+                                                         </div>
                                                       </div>
                                                    </div>
 
-                                                   <div class='input-box-1'
-                                                      style='height: 150px; display: flex; flex-direction: column; justify-content: space-around;'>
+                                                   <div class='input-box last-check'>
                                                       <div class='form-title'>Экстерьер</div>
+                                                      <div class='checks'>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check10'>
+                                                            <label for="check10">Легкосплавные диски</label>
+                                                         </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check10'>
-                                                         <label for="check10">Легкосплавные диски</label>
-                                                      </div>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check11'>
+                                                            <label for="check11">Люк на крыше</label>
+                                                         </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check11'>
-                                                         <label for="check11">Люк на крыше</label>
-                                                      </div>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check12'>
+                                                            <label for="check12">Электропривод зеркал</label>
+                                                         </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check12'>
-                                                         <label for="check12">Электропривод зеркал</label>
-                                                      </div>
-
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check13'>
-                                                         <label for="check13">Электростеклоподъемники</label>
+                                                         <div style='margin-bottom: 0; padding-bottom: 0;'
+                                                            class='check-box'>
+                                                            <input type="checkbox" value='true' id='check13'>
+                                                            <label for="check13">Электростеклоподъемники</label>
+                                                         </div>
                                                       </div>
                                                    </div>
 
-
-
-                                                   <div class='input-box-1'>
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Обзор</div>
-                                                      <div class='input-box-big'>
-                                                         <select name="" id="" class='input-box-input'>
-                                                            <option value="Фары">Фары</option>
-                                                         </select>
-                                                         <div class='input-down'>
-
+                                                      <!--   <div class='input-box-content'> -->
+                                                      <div class='input-all-select-abs'>
+                                                         <div class="input-all-select">
+                                                            <select name="" class='input-box-input'>
+                                                               <option value="Фары">Фары</option>
+                                                            </select>
                                                          </div>
                                                       </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check14'>
-                                                         <label for="check14">Противотуманные фары</label>
+                                                      <div class='checks'>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check14'>
+                                                            <label for="check14">Противотуманные фары</label>
+                                                         </div>
                                                       </div>
-
+                                                      <!--  </div> -->
                                                    </div>
                                                 </div>
 
-                                                <div class='input-container'>
-                                                   <div class='input-box-1'
-                                                      style='margin-top: -40; height: 100px; display: flex; flex-direction: column; justify-content: space-around;'>
+                                                <div class='input-string input-string2'>
+                                                   <div class='input-box'>
                                                       <div class='form-title'>Помощь при вождении</div>
+                                                      <div class='checks'>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check15'>
+                                                            <label for="check15">Усилитель руля</label>
+                                                         </div>
 
-
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check15'>
-                                                         <label for="check15">Усилитель руля</label>
+                                                         <div class='check-box'>
+                                                            <input type="checkbox" value='true' id='check16'>
+                                                            <label for="check16">Круиз контроль</label>
+                                                         </div>
                                                       </div>
 
-                                                      <div class='check-box'>
-                                                         <input type="checkbox" value='true' id='check16'>
-                                                         <label for="check16">Круиз контроль</label>
-                                                      </div>
+
                                                    </div>
                                                 </div>
                                                 <div class='button-box'>
@@ -830,19 +850,16 @@
                                                    <button class='button-3'>Показать 3471 объявление</button>
                                                 </div>
 
-
-
-
                                              </form>
                                              <div class='full-descript full-descript1 wrap'>
-                                                Свернуть &#8743;
+                                                Свернуть
                                              </div>
                                           </div>
 
 
                                           <div class='description-auto-full' style="display: none;">
                                              <div class='full-descript full-descript1-full'>
-                                                Развернуть &#709;
+                                                Развернуть
                                              </div>
                                           </div>
                                        </div>
@@ -892,13 +909,14 @@
                                        <div class='series-box'>
                                           <a style="text-decoration: none;" href='#' class='series-blue'>X2 <span
                                                 class='series-grey'>285</span></a>
-                                             <a style="text-decoration: none;" href='#' class='series-blue'></p>X3 <span
-                                                   class='series-grey'>38</span></a>
-                                                <a style="text-decoration: none;" href='#' class='series-blue'></p>X4
-                                                   <span class='series-grey'>604</span></a>
-                                                   <p style="margin-top: 9px;"><span class='series-full-descript series-full-descript1'>Все
-                                                         модели
-                                                         &#709;</span></p>
+                                          <a style="text-decoration: none;" href='#' class='series-blue'></p>X3 <span
+                                                class='series-grey'>38</span></a>
+                                          <a style="text-decoration: none;" href='#' class='series-blue'></p>X4
+                                             <span class='series-grey'>604</span></a>
+                                          <p style="margin-top: 9px;"><span
+                                                class='series-full-descript series-full-descript1'>Все
+                                                модели
+                                                &#709;</span></p>
                                        </div>
                                     </div>
                                  </div>
@@ -943,12 +961,13 @@
                                        </div>
                                        <div class='series-box'>
                                           <a style="text-decoration: none;" href='#' class='series-blue'>X2 <span
-                                             class='series-grey'>285</span></a>
+                                                class='series-grey'>285</span></a>
                                           <a style="text-decoration: none;" href='#' class='series-blue'></p>X3 <span
                                                 class='series-grey'>38</span></a>
-                                             <a style="text-decoration: none;" href='#' class='series-blue'></p>X4
-                                                <span class='series-grey'>604</span></a>
-                                          <p style="margin-top: 9px;"><span class='series-full-descript series-full-descript1-full'>Свернуть
+                                          <a style="text-decoration: none;" href='#' class='series-blue'></p>X4
+                                             <span class='series-grey'>604</span></a>
+                                          <p style="margin-top: 9px;"><span
+                                                class='series-full-descript series-full-descript1-full'>Свернуть
                                                 &#8743;</span></p>
                                        </div>
                                     </div>
@@ -967,30 +986,34 @@
                               <div class='sort-input'>
 
                                  <div class='sort-input-box-big'>
-                                    <select name="" id="" class='input-box-input'>
-                                       <option value="Сертификация">Сертификация</option>
-                                    </select>
-                                    <div class='input-down'>
-
+                                    <div class='input-all-select-abs'>
+                                       <div class="input-all-select">
+                                          <select name="sert" class='input-box-input'>
+                                             <option value="Сертификация">Сертификация</option>
+                                          </select>
+                                       </div>
                                     </div>
                                  </div>
 
                                  <div class='sort-input-box-big'>
-                                    <select name="" id="" class='input-box-input'>
-                                       <option value="Сортировка">Сортировка</option>
-                                    </select>
-                                    <div class='input-down'>
-
+                                    <div class='input-all-select-abs'>
+                                       <div class="input-all-select">
+                                          <select name="sort" class='input-box-input'>
+                                             <option value="Сортировка">Сортировка</option>
+                                          </select>
+                                       </div>
                                     </div>
                                  </div>
 
                                  <div class='sort-input-box-big'>
-                                    <select name="" id="" class='input-box-input'>
-                                       <option value="За все время">За все время</option>
-                                    </select>
-                                    <div class='input-down'>
-
+                                    <div class='input-all-select-abs'>
+                                       <div class="input-all-select">
+                                          <select name="all-time" class='input-box-input'>
+                                             <option value="За все время">За все время</option>
+                                          </select>
+                                       </div>
                                     </div>
+
                                  </div>
                               </div>
 
@@ -999,12 +1022,14 @@
                            <div class='all-car'>
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW325.jpg" alt="">
+                                    <img src="./img/cars/BMW325.jpg" alt="BMW325">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1030,7 +1055,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1042,12 +1067,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW318.jpg" alt="">
+                                    <img src="./img/cars/BMW318.jpg" alt="BMW318">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1074,7 +1101,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1093,12 +1120,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW325.jpg" alt="">
+                                    <img src="./img/cars/BMW325.jpg" alt="BMW325">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1124,7 +1153,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1136,12 +1165,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW318.jpg" alt="">
+                                    <img src="./img/cars/BMW318.jpg" alt="BMW318">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1168,7 +1199,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1187,12 +1218,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW325.jpg" alt="">
+                                    <img src="./img/cars/BMW325.jpg" alt="BMW325">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1218,7 +1251,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва. ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1230,12 +1263,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW318.jpg" alt="">
+                                    <img src="./img/cars/BMW318.jpg" alt="BMW318">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1262,7 +1297,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1281,12 +1316,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW325.jpg" alt="">
+                                    <img src="./img/cars/BMW325.jpg" alt="BMW325">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1312,7 +1349,7 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>
@@ -1324,12 +1361,14 @@
 
                               <div class='car-card'>
                                  <div class='car-photo'>
-                                    <img src="./img/cars/BMW318.jpg" alt="">
+                                    <img src="./img/cars/BMW318.jpg" alt="BMW318">
                                  </div>
 
                                  <div class='car-info'>
                                     <div class="car-name">
-                                       <a href="#" style="text-decoration: none;"><h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1></a>
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1>
+                                       </a>
                                        <div class='car-name-button-box'>
                                           <button class='car-like'></button>
                                           <button class='car-compare'></button>
@@ -1356,7 +1395,105 @@
 
                                        <div class='car-specifications-box-big'>
                                           <p class='car-specifications-blue'>Дилер на Щелковской</p>
-                                          <p class='car-specifications-grey-light'>Москваб ш.Щелковское, д.100, стр.3
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
+                                          </p>
+                                          <p class='car-specifications-grey car-number'>
+                                             8(800)600<span class='car-number-full'>Показать номер</span>
+                                          </p>
+                                       </div>
+
+                                    </div>
+                                    <div class='best-comp'>
+                                       Лучшая комплектация
+                                    </div>
+                                 </div>
+
+
+
+                              </div>
+
+                              <div class='car-card'>
+                                 <div class='car-photo'>
+                                    <img src="./img/cars/BMW325.jpg" alt="BMW325">
+                                 </div>
+
+                                 <div class='car-info'>
+                                    <div class="car-name">
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 325, E90/E91/E93</h1>
+                                       </a>
+                                       <div class='car-name-button-box'>
+                                          <button class='car-like'></button>
+                                          <button class='car-compare'></button>
+                                          <button class='car-price'>450 000 руб</button>
+                                       </div>
+                                    </div>
+
+                                    <div class='car-update'>
+                                       Обновлено 6 дней назад
+                                    </div>
+                                    <div class='car-specifications'>
+                                       <div class='car-specifications-box-small'>
+                                          <p class='car-specifications-grey'>223 594 км</p>
+                                          <p class='car-specifications-grey'>2.5л Бензин</p>
+                                          <p class='car-specifications-grey'>218 л.с</p>
+                                       </div>
+
+                                       <div class='car-specifications-box-small'>
+                                          <p class='car-specifications-grey'>2006 г.</p>
+                                          <p class='car-specifications-grey'>Седан</p>
+                                          <p class='car-specifications-grey'>Автомат</p>
+                                       </div>
+
+                                       <div class='car-specifications-box-big'>
+                                          <p class='car-specifications-blue'>Дилер на Щелковской</p>
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
+                                          </p>
+                                          <p class='car-specifications-grey car-number'>
+                                             8(800)600<span class='car-number-full'>Показать номер</span>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class='car-card'>
+                                 <div class='car-photo'>
+                                    <img src="./img/cars/BMW318.jpg" alt="BMW318">
+                                 </div>
+
+                                 <div class='car-info'>
+                                    <div class="car-name">
+                                       <a href="#" style="text-decoration: none;">
+                                          <h1 class="h11">BMW 3 серии 318, E90/E91/E93</h1>
+                                       </a>
+                                       <div class='car-name-button-box'>
+                                          <button class='car-like'></button>
+                                          <button class='car-compare'></button>
+                                          <button class='car-price'>300 750 руб</button>
+                                       </div>
+                                    </div>
+
+                                    <div class='car-update'>
+                                       <span>Обновлено 6 дней назад</span>
+                                       <del>349 700 руб</del>
+                                    </div>
+                                    <div class='car-specifications'>
+                                       <div class='car-specifications-box-small'>
+                                          <p class='car-specifications-grey'>223 594 км</p>
+                                          <p class='car-specifications-grey'>2.5л Бензин</p>
+                                          <p class='car-specifications-grey'>218 л.с</p>
+                                       </div>
+
+                                       <div class='car-specifications-box-small'>
+                                          <p class='car-specifications-grey'>2006 г.</p>
+                                          <p class='car-specifications-grey'>Седан</p>
+                                          <p class='car-specifications-grey'>Автомат</p>
+                                       </div>
+
+                                       <div class='car-specifications-box-big'>
+                                          <p class='car-specifications-blue'>Дилер на Щелковской</p>
+                                          <p class='car-specifications-grey-light'>Москва, ш.Щелковское, д.100, стр.3
                                           </p>
                                           <p class='car-specifications-grey car-number'>
                                              8(800)600<span class='car-number-full'>Показать номер</span>

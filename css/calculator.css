@@ -1,5 +1,3 @@
-
-
 #slider-amount .ui-slider-range, 
 #slider-amount-primary .ui-slider-range , 
 #slider-term  .ui-slider-range, 
@@ -9,15 +7,13 @@
   box-sizing: border-box;
   margin: 2px 2px 2px 2px;
 }
-
 #slider-amount,
 #slider-amount-primary,
 #slider-term,
 #slider-interest{
   box-sizing: border-box;
   height: 6px;  
-  border: 0px;
-  /* padding: 2px; */
+  border: 0px;  
 }
 
 #slider-amount   .ui-slider-handle,
@@ -31,28 +27,22 @@
   
   cursor: pointer;
 }
-
 .form-group{
   display: flex;
-  background-color: #e5f3f9;
-  
+  background-color: #e5f3f9;  
   }
-
-  .container{
+  .calc-container{
     color: #656565;
-    font-size: 0.9em;
-    /* color: #3989ad; */
+    font-size: 0.9em;    
     padding: 30px 30px 30px 40px;
   }
-  .container1{
+  .calc-container1{
     width: 55%;
-  }
-  
-  .container2{
+  }  
+  .calc-container2{
     padding-top: 33px;
     width: 40%
   }
-
   .btn{
     width: 240px;
     height: 40px;
@@ -62,18 +52,11 @@
     border: 1px solid #3989ad;
     margin-top: 30px;
   }
-
   .btn:hover{
     background-color:  #e5f3f9;
     color:  #3989ad;
     border: 1px solid #3989ad;
-   }
-
-   .text-left{
-  /*   color: #656565;
-    font-size: 1em; */
-  }
-
+   }  
    .text-right{
      width: auto;
     color: #3989ad;
@@ -84,33 +67,22 @@
     display: flex;
     justify-content: flex-end;
    }
-
    .row{
      margin-top: 13px;
      display: flex; 
    }
-
    .row1{
     margin-top: 5px;
     display: flex; 
     justify-content: space-around;
     align-items: flex-end;
   }
-
    .col{
      width: auto;
      margin: 0;
     padding: 0;
    }
-   
-
-   #take{
+      #take{
      margin: 0px;
      padding: 0px;
-   }
-   
-
-   
-
-
-  
+   }  

@@ -1,5 +1,3 @@
-console.log('1');
-
 $(function () {
     function call() {
         var monthInterest = interest / 100 / 12;
@@ -108,5 +106,3 @@ $("#term").html(term);
 $("#interest").html(interest);
 call();
 });
-
-console.log('2');

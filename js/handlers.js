@@ -3,9 +3,9 @@ const button5 = document.querySelector('.button-5');
 const button6 = document.querySelector('.button-6');
 
 function handlerClickButton(){    
-    button4.style.color = '#bdbdbd';
-    button5.style.color = '#bdbdbd';
-    button6.style.color = '#bdbdbd';
+    button4.style.color = 'rgb(153, 153, 153)';
+    button5.style.color = 'rgb(153, 153, 153)';
+    button6.style.color = 'rgb(153, 153, 153)';
     event.toElement.style.color = '#3989ac';
 }
 
@@ -41,21 +41,32 @@ seriesfullDescript1Full.addEventListener('click', () => {
 for( let elem of document.querySelectorAll('.pagination-button')){    
     elem.addEventListener('click', () => { 
         for(let element of document.querySelectorAll('.pagination-button')){
-            element.style.color = '#bdbdbd';            
+            element.style.color = 'rgb(153, 153, 153)';            
         }
         event.toElement.style.color = '#3989ac';        
     })
 }
 
 for( let elem of document.querySelectorAll('input')){    
-    elem.addEventListener('click', () => {         
+    elem.addEventListener('click', () => { 
+        if(event.toElement.value === elem.getAttribute('data-v')){
             event.toElement.value='';
+        }               
             event.toElement.style.color = '#3989ac';           
     })
 }
 
-for( let elem of document.querySelectorAll('select')){    
-    elem.addEventListener('click', () => {     
-           event.toElement.style.color = '#3989ac';           
+for( let elem of document.querySelectorAll('select')){  
+    elem.addEventListener('change', () => {        
+        elem.style.color = '#3989ac';           
+    })
+}
+
+for( let elem of document.querySelectorAll('input')){    
+    elem.addEventListener('blur', () => {        
+        if(event.target.value == ''){            
+            event.target.value = elem.getAttribute('data-v');
+            event.target.style.color = 'rgb(153, 153, 153)';            
+        }                              
     })
 }
